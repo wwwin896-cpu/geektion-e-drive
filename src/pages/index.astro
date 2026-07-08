@@ -1,0 +1,47 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Home">
+	<main>
+		<section class="h-[80vh] flex flex-col justify-center items-center text-center p-4">
+			<h1 class="text-6xl md:text-8xl font-space font-bold tracking-tighter mb-6">
+				ENGINEERED TO <br/> <span class="text-cyberBlue italic">REDEFINE</span> PERFORMANCE
+			</h1>
+			<p class="max-w-2xl text-lg md:text-xl opacity-80 mb-10 font-light">
+				High-performance drive systems and OEM solutions for the next generation of eBikes. 
+				B2B partner for global brands and wholesalers.
+			</p>
+			<div class="flex gap-4">
+				<a href="/solutions/drive-system" class="px-8 py-4 bg-white text-graphite font-bold uppercase tracking-widest hover:bg-cyberBlue hover:text-white transition-all">
+					Explore Tech
+				</a>
+				<a href="/solutions/parts-oem" class="px-8 py-4 border border-white font-bold uppercase tracking-widest hover:border-industrialOrange hover:text-industrialOrange transition-all">
+					OEM Services
+				</a>
+			</div>
+		</section>
+
+		<section class="container mx-auto grid md:grid-cols-3 gap-8 p-4 py-20">
+			<div class="border border-white/10 p-8 hover:border-cyberBlue transition-colors group">
+				<h3 class="text-xs uppercase tracking-[0.2em] text-cyberBlue mb-4 font-bold">Pillar 01</h3>
+				<h2 class="text-3xl font-space font-bold mb-4">eBike Portfolio</h2>
+				<p class="opacity-60 mb-6 text-sm">Full-bike solutions ranging from urban commuters to high-performance mountain bikes.</p>
+				<a href="/solutions/ebike" class="text-xs uppercase tracking-widest font-bold group-hover:underline">View Collection &rarr;</a>
+			</div>
+			<div class="border border-white/10 p-8 hover:border-cyberBlue transition-colors group">
+				<h3 class="text-xs uppercase tracking-[0.2em] text-cyberBlue mb-4 font-bold">Pillar 02</h3>
+				<h2 class="text-3xl font-space font-bold mb-4">Geektion E-Drive</h2>
+				<p class="opacity-60 mb-6 text-sm">Torque-rich motors, high-density batteries, and intelligent human-machine interfaces.</p>
+				<a href="/solutions/drive-system" class="text-xs uppercase tracking-widest font-bold group-hover:underline">Technical Specs &rarr;</a>
+			</div>
+			<div class="border border-white/10 p-8 hover:border-cyberBlue transition-colors group">
+				<h3 class="text-xs uppercase tracking-[0.2em] text-cyberBlue mb-4 font-bold">Pillar 03</h3>
+				<h2 class="text-3xl font-space font-bold mb-4">Parts OEM</h2>
+				<p class="opacity-60 mb-6 text-sm">Precision manufacturing for brands. From frame forging to advanced CNC components.</p>
+				<a href="/solutions/parts-oem" class="text-xs uppercase tracking-widest font-bold group-hover:underline">Manufacturing &rarr;</a>
+			</div>
+		</section>
+	</main>
+</Layout>
+Layout>

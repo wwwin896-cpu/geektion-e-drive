@@ -1,0 +1,54 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Geektion - High Performance B2B eBike Solutions" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title} | Geektion</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Grotesk:wght@300;700&family=Space+Mono&display=swap" rel="stylesheet">
+	</head>
+	<body class="bg-graphite text-silver font-sans">
+		<nav class="border-b border-white/10 p-4 sticky top-0 bg-graphite/80 backdrop-blur-md z-50">
+			<div class="container mx-auto flex justify-between items-center">
+				<a href="/" class="text-2xl font-space font-bold tracking-tighter text-white">GEEKTION</a>
+				<div class="space-x-8 text-sm uppercase tracking-widest font-bold">
+					<a href="/solutions/ebike" class="hover:text-cyberBlue transition-colors">eBike</a>
+					<a href="/solutions/drive-system" class="hover:text-cyberBlue transition-colors">Geektion E-Drive</a>
+					<a href="/solutions/parts-oem" class="hover:text-cyberBlue transition-colors">Parts OEM</a>
+					<a href="/contact" class="px-4 py-2 bg-industrialOrange text-white rounded-sm">Contact</a>
+				</div>
+			</div>
+		</nav>
+		<slot />
+		<footer class="border-t border-white/10 py-12 mt-20">
+			<div class="container mx-auto text-center text-xs opacity-50 uppercase tracking-widest">
+				&copy; 2026 Geektion. High Performance Engineering.
+			</div>
+		</footer>
+	</body>
+</html>
+<style is:global>
+	:root {
+		--accent: 136, 58, 234;
+		--accent-light: 224, 204, 250;
+		--accent-dark: 49, 10, 101;
+		--accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent)),
+			rgb(var(--accent-light)) 30%,
+			white 60%
+		);
+	}
+</style>

@@ -1,0 +1,166 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { client } from '../../sanity/client';
+
+let products = [];
+try {
+	products = await client.fetch(`*[_type == "product" && category == "drive-system"]{
+		title,
+		"slug": slug.current,
+		technicalSpecs
+	}`);
+} catch (error) {
+	// Silenced for production, defaults to empty array
+}
+---
+
+<Layout title="Geektion E-Drive">
+	<main class="container mx-auto p-4 py-12">
+		<h1 class="text-5xl font-space font-bold mb-12 uppercase tracking-tighter">Geektion <span class="text-cyberBlue">E-Drive</span></h1>
+		
+		<!-- Hero Product: Micro Mid-drive System -->
+		<section class="mb-32 relative overflow-hidden bg-white/5 border border-white/10">
+			<div class="grid lg:grid-cols-2 gap-0 items-stretch">
+				<div class="p-8 lg:p-16 flex flex-col justify-center">
+					<h3 class="text-cyberBlue font-mono text-sm uppercase tracking-widest mb-4">Flagship Innovation</h3>
+					<h2 class="text-4xl md:text-6xl font-space font-bold mb-6 leading-none">MICRO MID-DRIVE <br/> <span class="text-industrialOrange">FOLDING EDITION</span></h2>
+					<p class="text-lg opacity-80 mb-8 max-w-lg">
+						The world's most compact mid-drive system designed specifically for 16" and 20" folding bikes. 
+						Stealth integration into the bottom bracket ensures zero interference with the folding mechanism.
+					</p>
+					
+					<!-- Spec Card -->
+					<div class="bg-graphite p-6 border-l-4 border-cyberBlue inline-block mb-10 max-w-sm">
+						<h4 class="text-xs uppercase tracking-widest opacity-50 mb-4 font-bold">System Specification</h4>
+						<div class="space-y-3">
+							<div class="flex justify-between gap-8 border-b border-white/5 pb-2">
+								<span class="text-sm opacity-70">Total System Weight</span>
+								<span class="font-mono text-cyberBlue font-bold">&lt; 2.5 kg</span>
+							</div>
+							<div class="flex justify-between gap-8 border-b border-white/5 pb-2">
+								<span class="text-sm opacity-70">Nominal Torque</span>
+								<span class="font-mono text-cyberBlue font-bold">45 - 60 Nm</span>
+							</div>
+							<div class="flex justify-between gap-8 border-b border-white/5 pb-2">
+								<span class="text-sm opacity-70">Max Power</span>
+								<span class="font-mono text-cyberBlue font-bold">250W / 350W</span>
+							</div>
+							<div class="flex justify-between gap-8">
+								<span class="text-sm opacity-70">BB Width</span>
+								<span class="font-mono text-cyberBlue font-bold">68mm Standard</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="flex flex-wrap gap-4">
+						<button class="px-8 py-4 bg-cyberBlue text-white font-bold uppercase tracking-widest hover:bg-white hover:text-graphite transition-all">Download Technical PDF</button>
+						<button class="px-8 py-4 border border-white/20 font-bold uppercase tracking-widest hover:border-industrialOrange hover:text-industrialOrange transition-all">OEM Inquiry</button>
+					</div>
+				</div>
+				
+				<div class="relative min-h-[400px] bg-black">
+					<img 
+						src="https://sc02.alicdn.com/kf/H1ed28ff0c43f4948ac6d4621addc1ce4v.jpg" 
+						alt="Micro Mid-drive Motor on Folding Bike" 
+						class="absolute inset-0 w-full h-full object-cover opacity-80"
+					/>
+					<div class="absolute bottom-8 right-8 grid grid-cols-2 gap-4 max-w-[300px]">
+						<div class="border border-white/20 p-2 bg-graphite/80 backdrop-blur-md">
+							<img src="https://sc02.alicdn.com/kf/H32aa18d37e0549fdbb8dee5abf18e49ab.jpg" alt="Detail 1" class="w-full h-20 object-cover" />
+						</div>
+						<div class="border border-white/20 p-2 bg-graphite/80 backdrop-blur-md">
+							<img src="https://sc02.alicdn.com/kf/H7796d5fc2bfe40e8a97eab01fd962cafy.jpg" alt="Detail 2" class="w-full h-20 object-cover" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Energy Solutions: Flight-Safe Power Bank -->
+		<section class="mb-32 grid lg:grid-cols-2 gap-12 items-center">
+			<div class="order-2 lg:order-1 relative group">
+				<div class="absolute -inset-4 bg-cyberBlue/10 blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+				<div class="relative border border-white/10 bg-graphite overflow-hidden">
+					<img 
+						src="https://sc02.alicdn.com/kf/H6ff983140d284c078c0c355d88109ff14.jpg" 
+						alt="Flight Safe Portable Power Bank" 
+						class="w-full h-auto"
+					/>
+					<!-- Technical Overlay Badge -->
+					<div class="absolute top-6 left-6 bg-cyberBlue/90 backdrop-blur-md px-4 py-2 flex items-center gap-2 border border-white/20">
+						<span class="w-2 h-2 rounded-full bg-white animate-pulse"></span>
+						<span class="text-[10px] font-mono font-bold uppercase tracking-tighter text-white">100Wh Cabin Safe / IATA Ready</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="order-1 lg:order-2 space-y-8">
+				<div class="space-y-4">
+					<h3 class="text-industrialOrange font-mono text-sm uppercase tracking-widest font-bold">Energy Solutions</h3>
+					<h2 class="text-4xl md:text-5xl font-space font-bold leading-tight">THE FLIGHT-SAFE <br/><span class="text-white">ENERGY HUB</span></h2>
+					<p class="text-lg opacity-70 leading-relaxed">
+						Experience true independence with the world's first dual-purpose eBike battery. Designed to detach effortlessly, it transforms from your bike's power source into a high-capacity personal power bank.
+					</p>
+				</div>
+
+				<div class="grid sm:grid-cols-2 gap-6">
+					<div class="space-y-2">
+						<h4 class="text-white font-bold text-sm uppercase flex items-center gap-2">
+							<span class="w-1 h-4 bg-cyberBlue"></span> Aviation Compliant
+						</h4>
+						<p class="text-xs opacity-50">IATA-ready 100Wh capacity allows you to carry your energy on board any international flight.</p>
+					</div>
+					<div class="space-y-2">
+						<h4 class="text-white font-bold text-sm uppercase flex items-center gap-2">
+							<span class="w-1 h-4 bg-cyberBlue"></span> Smart Dual-Use
+						</h4>
+						<p class="text-xs opacity-50">Integrated USB-C PD ports power your laptops, smartphones, and cameras on the go.</p>
+					</div>
+					<div class="space-y-2">
+						<h4 class="text-white font-bold text-sm uppercase flex items-center gap-2">
+							<span class="w-1 h-4 bg-cyberBlue"></span> Swift Release
+						</h4>
+						<p class="text-xs opacity-50">One-click mechanical detachment system for rapid charging and maximum security.</p>
+					</div>
+					<div class="space-y-2">
+						<h4 class="text-white font-bold text-sm uppercase flex items-center gap-2">
+							<span class="w-1 h-4 bg-cyberBlue"></span> Independent Cell
+						</h4>
+						<p class="text-xs opacity-50">Modular design enables the bike and battery to exist in a completely separate state.</p>
+					</div>
+				</div>
+
+				<div class="pt-4">
+					<a href="/contact" class="inline-flex items-center gap-4 text-cyberBlue font-bold uppercase tracking-widest text-sm group">
+						Request Integration Specs 
+						<span class="w-12 h-[1px] bg-cyberBlue group-hover:w-16 transition-all"></span>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<h2 class="text-2xl font-space font-bold mb-8 uppercase tracking-widest opacity-50">Standard Catalog</h2>
+		<section class="grid md:grid-cols-3 gap-8">
+			{products.length > 0 ? (
+				products.map((product: any) => (
+					<div class="border border-white/10 p-8 bg-white/5">
+						<h3 class="text-industrialOrange font-bold mb-4 font-mono">{product.title}</h3>
+						<div class="space-y-2 mb-8">
+							{product.technicalSpecs?.map((spec: any) => (
+								<div class="flex justify-between text-xs">
+									<span>{spec.label}</span>
+									<span class="text-cyberBlue font-mono">{spec.value} {spec.unit}</span>
+								</div>
+							))}
+						</div>
+						<button class="w-full py-3 border border-white/20 text-xs uppercase font-bold tracking-widest hover:bg-white hover:text-graphite transition-all">Download STEP</button>
+					</div>
+				))
+			) : (
+				<div class="col-span-3 py-20 text-center border border-dashed border-white/20">
+					<p class="opacity-50 uppercase tracking-widest text-sm">No products found in Studio. Please check your Sanity dataset.</p>
+				</div>
+			)}
+		</section>
+	</main>
+</Layout>
