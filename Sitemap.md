@@ -4,42 +4,50 @@
 - **Home**: Brand identity, innovation highlights, and three-pillar business overview.
 - **Solutions**:
     - **eBike Portfolio**: Ready-to-market full bikes (Urban, MTB, Trekking).
-    - **Drive Systems**: The "Heart" of the bike (Motors, Batteries, Displays, Controllers).
+    - **Geektion E-Drive**: The "Heart" of the bike (Motors, Batteries, Displays, Controllers).
     - **Parts OEM**: Custom manufacturing (Frames, Forging, CNC, Casting).
-- **Technology**: Innovation hub focusing on R&D, software, and connectivity.
+    - **Applications**: Vertical markets (Urban, Logistics, Fleet).
+- **Technology**: Engineering deep-dive (Propulsion Tech, Energy Solutions, Benchmarks).
+- **Insights**: Technical blog and industry analysis.
 - **Support & B2B**:
     - **Download Center**: Technical manuals, CAD files, Certifications.
     - **Service & Warranty**: B2B support protocols.
 - **About Us**: Company history, manufacturing facilities, ESG, and global team.
-- **Contact**: B2B Inquiry portal and Global Sales offices.
+- **Contact**: B2B Inquiry portal, Global Sales offices, and Social Media Hub.
 
 ---
 
 ## 2. Detailed Page Structure
 
 ### Home
-- **Hero**: High-impact video of drive system integration.
-- **Core Pillars Section**: 3 interactive cards (eBike / Drive System / OEM).
-- **Tech Highlights**: Real-time spec counter (Max Torque, Max Range).
-- **Partnerships**: Logo wall of existing brand partners.
-
-### Solutions > Geektion E-Drive (Sub-pages)
-- **Motor Series**: Product listing with Nm/Weight filters.
-- **Energy Solutions**: Battery packs (Integrated vs External).
-- **Human-Machine Interface (HMI)**: Displays and App connectivity.
-- **Control Units**: Sensors and specialized controllers.
-
-### Solutions > Parts OEM
-- **Manufacturing Capabilities**: Showcase of factory tech (Robotic welding, 3D printing).
-- **OEM Workflow**: Step-by-step from Design -> Prototyping -> Mass Production.
-- **Custom Projects**: Gallery of past successful white-label projects.
+- **Hero**: High-impact video of Geektion E-Drive integration.
+- **Core Pillars Section**: 3 interactive cards (eBike / Geektion E-Drive / OEM).
+- **Innovation Hub**: Feed from Latest Insights.
 
 ### Technology
-- **Performance Hub**: Deep dive into motor efficiency and thermal management.
-- **Connectivity**: geektion Smart App and IoT integration features.
-- **Compliance**: Standards center (EN15194, UL2849, CE).
+- **Propulsion Tech**: Integrated Micro Mid-Drive efficiency data.
+- **Energy Solutions**: IATA-compliant modular battery specs.
+- **Benchmarks**: Technical comparison against industry standards.
+
+### Solutions > Applications
+- **Urban Commuting**: Portfolio for city mobility brands.
+- **Last-Mile Delivery**: Heavy-duty solutions for logistics.
+- **Shared Fleets**: IoT-integrated platforms for mobility operators.
+
+### Solutions > Geektion E-Drive
+- **Motor Series**: Product listing with Nm/Weight filters.
+- **Energy Solutions**: Battery packs (Integrated vs External).
+- **HMI & Control**: Displays and App connectivity.
 
 ### B2B Contact
-- **Project Inquiry Form**: Captures specific business needs (Volume, Region, Tech specs).
-- **Wholesale Login**: Portal for existing distributors.
-ors.
+- **Project Inquiry Form**: Captures specific business needs.
+- **Social Media Hub**: Matrix of LinkedIn, Facebook, Instagram, etc.
+
+---
+
+## 3. Social Media Matrix
+- **LinkedIn**: Professional B2B networking.
+- **Facebook**: Community and Events.
+- **Instagram**: Product showcases.
+- **Pinterest**: Design inspiration.
+- **Reddit**: Technical community.

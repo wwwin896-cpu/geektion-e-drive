@@ -1,0 +1,60 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Applications & Use Cases">
+	<main class="container mx-auto p-4 py-20">
+		<h1 class="text-5xl font-space font-bold mb-12 uppercase tracking-tighter text-white">Smart Mobility <span class="text-cyberBlue">Applications</span></h1>
+		
+		<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+			<!-- Application 1: Urban Commuting -->
+			<div class="border border-white/10 p-8 bg-white/5 hover:border-cyberBlue transition-colors group">
+				<div class="h-40 bg-graphite mb-6 flex items-center justify-center overflow-hidden">
+					<span class="text-xs uppercase tracking-widest opacity-30 group-hover:opacity-100 transition-opacity">Urban Mobility</span>
+				</div>
+				<h2 class="text-2xl font-space font-bold mb-4">Urban Commuting</h2>
+				<p class="opacity-60 text-sm mb-6">Lightweight, foldable, and efficient. Our drive systems power the next generation of city commuters who value speed and portability.</p>
+				<ul class="text-xs space-y-2 opacity-50 mb-6 font-mono">
+					<li>• Seamless frame integration</li>
+					<li>• Silent operation</li>
+					<li>• 100km+ Range</li>
+				</ul>
+			</div>
+
+			<!-- Application 2: Last-Mile Delivery -->
+			<div class="border border-white/10 p-8 bg-white/5 hover:border-cyberBlue transition-colors group">
+				<div class="h-40 bg-graphite mb-6 flex items-center justify-center overflow-hidden">
+					<span class="text-xs uppercase tracking-widest opacity-30 group-hover:opacity-100 transition-opacity">Logistics</span>
+				</div>
+				<h2 class="text-2xl font-space font-bold mb-4">Last-Mile Delivery</h2>
+				<p class="opacity-60 text-sm mb-6">High torque for heavy loads. Our micro-drive systems are robust enough for cargo bikes while maintaining energy efficiency for all-day delivery routes.</p>
+				<ul class="text-xs space-y-2 opacity-50 mb-6 font-mono">
+					<li>• High torque (60Nm+)</li>
+					<li>• Heavy-duty durability</li>
+					<li>• Rapid battery swap</li>
+				</ul>
+			</div>
+
+			<!-- Application 3: Micro-Mobility Fleets -->
+			<div class="border border-white/10 p-8 bg-white/5 hover:border-cyberBlue transition-colors group">
+				<div class="h-40 bg-graphite mb-6 flex items-center justify-center overflow-hidden">
+					<span class="text-xs uppercase tracking-widest opacity-30 group-hover:opacity-100 transition-opacity">Shared Fleets</span>
+				</div>
+				<h2 class="text-2xl font-space font-bold mb-4">Shared Mobility Fleets</h2>
+				<p class="opacity-60 text-sm mb-6">Optimized for fleet management. Low maintenance requirements and integrated IoT connectivity for real-time tracking and diagnostics.</p>
+				<ul class="text-xs space-y-2 opacity-50 mb-6 font-mono">
+					<li>• IoT & Cloud Ready</li>
+					<li>• Anti-theft features</li>
+					<li>• Weatherproof (IP67)</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- B2B Section -->
+		<section class="mt-32 p-12 bg-cyberBlue/10 border border-cyberBlue/20 text-center">
+			<h2 class="text-3xl font-space font-bold mb-6">Tailored Solutions for Your Fleet</h2>
+			<p class="max-w-2xl mx-auto opacity-70 mb-8">We provide complete service for customized solutions tailored to your specific application needs. Partner with our R&D team to bring your vision to life.</p>
+			<a href="/contact" class="px-8 py-4 bg-cyberBlue text-white font-bold uppercase tracking-widest hover:bg-white hover:text-graphite transition-all">Consult Our Experts</a>
+		</section>
+	</main>
+</Layout>
