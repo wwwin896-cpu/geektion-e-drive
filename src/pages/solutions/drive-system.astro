@@ -14,10 +14,57 @@ try {
 }
 ---
 
-<Layout title="Geektion E-Drive">
+<Layout title="Geektion E-Drive | High-Performance eBike Systems">
+	<!-- Technical SEO: Product Schema -->
+	<script type="application/ld+json" slot="head">
+		{
+			"@context": "https://schema.org/",
+			"@type": "Product",
+			"name": "Geektion Micro Mid-Drive System",
+			"image": [
+				"https://sc02.alicdn.com/kf/H1ed28ff0c43f4948ac6d4621addc1ce4v.jpg"
+			],
+			"description": "Ultra-compact mid-drive motor system for folding bikes, featuring stealth integration and high torque performance.",
+			"brand": {
+				"@type": "Brand",
+				"name": "Geektion"
+			},
+			"offers": {
+				"@type": "AggregateOffer",
+				"offerCount": "1",
+				"lowPrice": "0",
+				"priceCurrency": "USD"
+			}
+		}
+	</script>
+
 	<main class="container mx-auto p-4 py-12">
 		<h1 class="text-5xl font-space font-bold mb-12 uppercase tracking-tighter">Geektion <span class="text-cyberBlue">E-Drive</span></h1>
 		
+		<!-- Series Classification -->
+		<section class="mb-20 grid md:grid-cols-2 gap-8">
+			<div class="p-8 border border-cyberBlue/30 bg-cyberBlue/5">
+				<h3 class="text-cyberBlue font-mono text-xs uppercase tracking-widest mb-2">Series G</h3>
+				<h2 class="text-3xl font-space font-bold mb-4 uppercase">Performance Edition</h2>
+				<p class="opacity-70 text-sm mb-6">Designed for high-torque applications and demanding terrains. Optimized for eMTB and heavy-duty urban use.</p>
+				<ul class="text-xs space-y-2 font-mono opacity-60">
+					<li>• Max Torque: 85Nm</li>
+					<li>• Peak Efficiency: >90%</li>
+					<li>• System Weight: 2.6kg</li>
+				</ul>
+			</div>
+			<div class="p-8 border border-white/10 bg-white/5">
+				<h3 class="text-industrialOrange font-mono text-xs uppercase tracking-widest mb-2">Series C</h3>
+				<h2 class="text-3xl font-space font-bold mb-4 uppercase">City & Folding</h2>
+				<p class="opacity-70 text-sm mb-6">Ultra-compact form factor for stealth integration. Perfect for lightweight folding bikes and city commuters.</p>
+				<ul class="text-xs space-y-2 font-mono opacity-60">
+					<li>• Max Torque: 45-60Nm</li>
+					<li>• Stealth Design: 110mm diameter</li>
+					<li>• System Weight: 2.1kg</li>
+				</ul>
+			</div>
+		</section>
+
 		<!-- Hero Product: Micro Mid-drive System -->
 		<section class="mb-32 relative overflow-hidden bg-white/5 border border-white/10">
 			<div class="grid lg:grid-cols-2 gap-0 items-stretch">
@@ -61,20 +108,67 @@ try {
 				<div class="relative min-h-[400px] bg-black">
 					<img 
 						src="https://sc02.alicdn.com/kf/H1ed28ff0c43f4948ac6d4621addc1ce4v.jpg" 
-						alt="Micro Mid-drive Motor on Folding Bike" 
+						alt="Geektion Micro Mid-drive Motor installed on a high-end folding bike" 
 						class="absolute inset-0 w-full h-full object-cover opacity-80"
 					/>
 					<div class="absolute bottom-8 right-8 grid grid-cols-2 gap-4 max-w-[300px]">
 						<div class="border border-white/20 p-2 bg-graphite/80 backdrop-blur-md">
-							<img src="https://sc02.alicdn.com/kf/H32aa18d37e0549fdbb8dee5abf18e49ab.jpg" alt="Detail 1" class="w-full h-20 object-cover" />
+							<img src="https://sc02.alicdn.com/kf/H32aa18d37e0549fdbb8dee5abf18e49ab.jpg" alt="Macro detail of the Geektion Micro Motor CNC housing" class="w-full h-20 object-cover" />
 						</div>
 						<div class="border border-white/20 p-2 bg-graphite/80 backdrop-blur-md">
-							<img src="https://sc02.alicdn.com/kf/H7796d5fc2bfe40e8a97eab01fd962cafy.jpg" alt="Detail 2" class="w-full h-20 object-cover" />
+							<img src="https://sc02.alicdn.com/kf/H7796d5fc2bfe40e8a97eab01fd962cafy.jpg" alt="Compact internal gear system of Geektion E-Drive" class="w-full h-20 object-cover" />
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+
+		<!-- OEM/ODM Scope -->
+		<section class="mb-32 py-20 border-y border-white/10">
+			<h2 class="text-3xl font-space font-bold mb-12 uppercase tracking-tighter">OEM/ODM <span class="text-cyberBlue">Customization</span></h2>
+			<div class="grid md:grid-cols-4 gap-6">
+				<div class="p-6 border border-white/5 hover:border-cyberBlue transition-all">
+					<h4 class="text-cyberBlue font-bold mb-4 uppercase text-xs">Firmware</h4>
+					<p class="text-xs opacity-60">Custom power curves, speed limits, and sensor sensitivity tuning for your brand's ride feel.</p>
+				</div>
+				<div class="p-6 border border-white/5 hover:border-cyberBlue transition-all">
+					<h4 class="text-cyberBlue font-bold mb-4 uppercase text-xs">Housing</h4>
+					<p class="text-xs opacity-60">Custom colors, branding, and shape modifications to match your frame aesthetics.</p>
+				</div>
+				<div class="p-6 border border-white/5 hover:border-cyberBlue transition-all">
+					<h4 class="text-cyberBlue font-bold mb-4 uppercase text-xs">Display/HMI</h4>
+					<p class="text-xs opacity-60">UI/UX customization for LED/LCD displays and white-label mobile app integration.</p>
+				</div>
+				<div class="p-6 border border-white/5 hover:border-cyberBlue transition-all">
+					<h4 class="text-cyberBlue font-bold mb-4 uppercase text-xs">Connectivity</h4>
+					<p class="text-xs opacity-60">Custom CAN-bus protocols and IoT module integration for fleet management.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Certifications Gallery -->
+		<section class="mb-32">
+			<h2 class="text-3xl font-space font-bold mb-12 uppercase tracking-tighter">Global <span class="text-cyberBlue">Compliance</span></h2>
+			<div class="flex flex-wrap gap-12 opacity-40 grayscale hover:grayscale-0 transition-all">
+				<div class="text-center">
+					<div class="text-4xl font-bold mb-2">CE</div>
+					<div class="text-[10px] uppercase tracking-widest font-mono">EN15194:2017</div>
+				</div>
+				<div class="text-center">
+					<div class="text-4xl font-bold mb-2">UL</div>
+					<div class="text-[10px] uppercase tracking-widest font-mono">UL2849 Ready</div>
+				</div>
+				<div class="text-center">
+					<div class="text-4xl font-bold mb-2">ROHS</div>
+					<div class="text-[10px] uppercase tracking-widest font-mono">2.0 Compliant</div>
+				</div>
+				<div class="text-center">
+					<div class="text-4xl font-bold mb-2">FCC</div>
+					<div class="text-[10px] uppercase tracking-widest font-mono">Part 15 Class B</div>
+				</div>
+			</div>
+		</section>
+
 
 		<!-- Energy Solutions: Flight-Safe Power Bank -->
 		<section class="mb-32 grid lg:grid-cols-2 gap-12 items-center">
