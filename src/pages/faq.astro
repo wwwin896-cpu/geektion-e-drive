@@ -27,22 +27,22 @@ const faqs = [
 
 <Layout title="Procurement FAQ | Geektion B2B Solutions">
 	<main class="container mx-auto p-4 py-20 max-w-4xl">
-		<h1 class="text-5xl font-space font-bold mb-12 uppercase tracking-tighter">Procurement <span class="text-cyberBlue">FAQ</span></h1>
-		<p class="text-xl opacity-60 mb-16">Everything you need to know about partnering with Geektion for your eBike brand.</p>
+		<h1 class="text-5xl font-bold mb-12 uppercase tracking-tighter">Procurement <span class="text-cyberBlue">FAQ</span></h1>
+		<p class="text-xl opacity-60 mb-16 leading-relaxed">Everything you need to know about partnering with Geektion for your eBike brand.</p>
 		
 		<div class="space-y-12">
 			{faqs.map((faq) => (
 				<div class="border-b border-white/10 pb-12">
-					<h3 class="text-2xl font-space font-bold mb-4 text-white">Q: {faq.q}</h3>
+					<h3 class="text-2xl font-bold mb-4 text-white tracking-tighter uppercase">Q: {faq.q}</h3>
 					<p class="opacity-70 leading-relaxed text-lg">A: {faq.a}</p>
 				</div>
 			))}
 		</div>
 
 		<section class="mt-20 p-12 bg-industrialOrange/10 border border-industrialOrange/20">
-			<h2 class="text-2xl font-space font-bold mb-4 text-industrialOrange">Still have questions?</h2>
-			<p class="opacity-70 mb-8">Contact our sales team directly for a tailored quotation or sample request.</p>
-			<a href="/contact" class="inline-block px-8 py-4 bg-industrialOrange text-white font-bold uppercase tracking-widest">Contact Sales</a>
+			<h2 class="text-2xl font-bold mb-4 text-industrialOrange tracking-tighter uppercase leading-relaxed">Still have questions?</h2>
+			<p class="opacity-70 mb-8 leading-relaxed">Contact our sales team directly for a tailored quotation or sample request.</p>
+			<a href="/contact" class="inline-block px-8 py-4 bg-industrialOrange text-white font-bold uppercase tracking-widest tracking-tighter">Contact Sales</a>
 		</section>
 	</main>
 </Layout>

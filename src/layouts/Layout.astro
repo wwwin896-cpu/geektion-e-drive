@@ -17,13 +17,13 @@ const { title } = Astro.props;
 		<title>{title} | Geektion</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Grotesk:wght@300;700&family=Space+Mono&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Space+Mono&display=swap" rel="stylesheet">
 		<slot name="head" />
 	</head>
-	<body class="bg-graphite text-silver font-sans">
+	<body class="bg-graphite text-silver font-sans leading-relaxed">
 		<nav class="border-b border-white/10 p-4 sticky top-0 bg-graphite/80 backdrop-blur-md z-50">
 			<div class="container mx-auto flex justify-between items-center">
-				<a href="/" class="text-2xl font-space font-bold tracking-tighter text-white">GEEKTION</a>
+				<a href="/" class="text-2xl font-bold tracking-tighter text-white">GEEKTION</a>
 				<div class="space-x-8 text-sm uppercase tracking-widest font-bold">
 					<a href="/solutions/ebike" class="hover:text-cyberBlue transition-colors">eBike</a>
 					<a href="/solutions/drive-system" class="hover:text-cyberBlue transition-colors">Geektion E-Drive</a>

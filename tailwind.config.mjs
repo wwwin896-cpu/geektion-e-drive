@@ -10,8 +10,7 @@ export default {
         industrialOrange: '#FF6B00',
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-        space: ['Space Grotesk', 'sans-serif'],
+        sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
         mono: ['Space Mono', 'monospace'],
       },
     },
