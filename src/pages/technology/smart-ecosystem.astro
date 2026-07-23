@@ -1,0 +1,78 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Smart Ecosystem | Connectivity & Intelligence">
+	<main class="container mx-auto p-4 py-20">
+		<header class="max-w-4xl mb-32">
+			<h3 class="text-cyberBlue font-bold text-xs uppercase tracking-widest mb-4">Smart Mobility</h3>
+			<h1 class="text-5xl md:text-7xl font-bold tracking-tighter text-white uppercase mb-8">Connected <br/> <span class="text-cyberBlue italic">Intelligence</span></h1>
+			<p class="text-xl opacity-60 leading-relaxed max-w-2xl">A unified software architecture that bridges the gap between hardware performance and the rider experience. Seamlessly integrated, future-proofed by design.</p>
+		</header>
+
+		<!-- Connect App Section -->
+		<section class="grid lg:grid-cols-2 gap-20 items-center mb-40">
+			<div class="aspect-[9/16] bg-white/5 border border-white/10 rounded-[3rem] p-4 relative overflow-hidden group">
+				<!-- Placeholder for App UI -->
+				<div class="absolute inset-0 flex items-center justify-center">
+					<span class="text-[10px] uppercase tracking-widest opacity-30 group-hover:opacity-100 transition-opacity font-bold">App Visualization UI Placeholder</span>
+				</div>
+				<div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-cyberBlue/10 to-transparent"></div>
+			</div>
+			<div class="space-y-12">
+				<div>
+					<h2 class="text-3xl font-bold tracking-tighter text-white mb-6 uppercase">Geektion Connect App</h2>
+					<p class="opacity-70 leading-relaxed mb-8">A powerful interface for riders and fleet managers. Real-time data visualization, personalized ride modes, and integrated navigation.</p>
+					<ul class="space-y-4 text-sm font-mono opacity-60">
+						<li class="flex items-center gap-3"><span class="w-1 h-1 bg-cyberBlue rounded-full"></span> Dynamic Range Estimation</li>
+						<li class="flex items-center gap-3"><span class="w-1 h-1 bg-cyberBlue rounded-full"></span> Anti-Theft GPS Tracking</li>
+						<li class="flex items-center gap-3"><span class="w-1 h-1 bg-cyberBlue rounded-full"></span> Bluetooth Low Energy (BLE) Sync</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<!-- OTA & Firmware Section -->
+		<section class="mb-40 py-20 border-y border-white/10">
+			<div class="grid lg:grid-cols-2 gap-20">
+				<div>
+					<h3 class="text-industrialOrange font-bold text-xs uppercase tracking-widest mb-4">Lifecycle Management</h3>
+					<h2 class="text-4xl font-bold tracking-tighter text-white uppercase mb-6">Always <span class="text-white/40 italic">Evolving</span></h2>
+					<p class="opacity-70 leading-relaxed mb-8">Our Over-The-Air (OTA) infrastructure ensures that every Geektion-powered bike improves over time. Security patches, motor logic optimization, and new features are delivered seamlessly via the Geektion Cloud.</p>
+				</div>
+				<div class="grid sm:grid-cols-2 gap-8">
+					<div class="p-8 bg-white/5 border border-white/5">
+						<h4 class="text-white font-bold tracking-tighter mb-2">Automated Updates</h4>
+						<p class="text-xs opacity-50 leading-relaxed">Background firmware delivery via rider smartphones with zero downtime.</p>
+					</div>
+					<div class="p-8 bg-white/5 border border-white/5">
+						<h4 class="text-white font-bold tracking-tighter mb-2">Performance Tuning</h4>
+						<p class="text-xs opacity-50 leading-relaxed">Remote adjustment of torque curves and power delivery logic.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Diagnostic Tools -->
+		<section>
+			<div class="text-center max-w-3xl mx-auto mb-20">
+				<h2 class="text-4xl font-bold tracking-tighter text-white uppercase mb-6">Dealer & <span class="text-cyberBlue">Diagnostic</span> Hub</h2>
+				<p class="opacity-60 leading-relaxed">Industrial-grade diagnostic software for professional service centers. Rapid troubleshooting and complete system health reports.</p>
+			</div>
+			<div class="grid md:grid-cols-3 gap-8">
+				<div class="p-10 border border-white/10 bg-graphite hover:border-cyberBlue transition-all">
+					<h4 class="text-cyberBlue font-bold tracking-tighter mb-4">Error Log Analysis</h4>
+					<p class="text-xs opacity-50 leading-relaxed">Detailed timestamps and sensor data for precise fault identification.</p>
+				</div>
+				<div class="p-10 border border-white/10 bg-graphite hover:border-cyberBlue transition-all">
+					<h4 class="text-cyberBlue font-bold tracking-tighter mb-4">Battery Health</h4>
+					<p class="text-xs opacity-50 leading-relaxed">Cycle count, cell balancing data, and thermal history reporting.</p>
+				</div>
+				<div class="p-10 border border-white/10 bg-graphite hover:border-cyberBlue transition-all">
+					<h4 class="text-cyberBlue font-bold tracking-tighter mb-4">Configuration</h4>
+					<p class="text-xs opacity-50 leading-relaxed">Manufacturer-level system parameter locking and regional compliance settings.</p>
+				</div>
+			</div>
+		</section>
+	</main>
+</Layout>

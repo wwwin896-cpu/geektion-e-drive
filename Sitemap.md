@@ -3,17 +3,15 @@
 ## 1. Global Navigation
 - **Home**: Brand identity, innovation highlights, and three-pillar business overview.
 - **Solutions**:
-    - **eBike Portfolio**: Ready-to-market full bikes (Urban, MTB, Trekking).
-    - **Geektion E-Drive**: The "Heart" of the bike (Motors, Batteries, Displays, Controllers).
-    - **Parts OEM**: Custom manufacturing (Frames, Forging, CNC, Casting).
-    - **Applications**: Vertical markets (Urban, Logistics, Fleet).
-- **Technology**: Engineering deep-dive (Propulsion Tech, Energy Solutions, Benchmarks).
+    - **eBike Portfolio**: Ready-to-market full bikes.
+    - **Geektion E-Drive**: Drive units and battery systems.
+    - **Manufacturers**: B2B Portal for OEM/ODM integration, technical assets (STEP/API).
+- **Technology**:
+    - **Smart Ecosystem**: Connectivity, OTA, and Diagnostic hub.
+    - **Benchmarks**: Engineering deep-dive and industry comparisons.
 - **Insights**: Technical blog and industry analysis.
-- **Support & B2B**:
-    - **Download Center**: Technical manuals, CAD files, Certifications.
-    - **Service & Warranty**: B2B support protocols.
-- **About Us**: Company history, manufacturing facilities, ESG, and global team.
-- **Contact**: B2B Inquiry portal, Global Sales offices, and Social Media Hub.
+- **FAQ**: Procurement and partnership guide.
+- **Contact**: B2B Inquiry portal and Social Media Hub.
 
 ---
 
