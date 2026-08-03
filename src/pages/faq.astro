@@ -23,9 +23,45 @@ const faqs = [
 		a: "We offer a standard 24-month warranty on drive units and a 12-month warranty on battery cells. We also provide a 1% spare parts buffer for bulk orders to ensure immediate local serviceability."
 	}
 ];
+
+const schemaFaqs = faqs.slice(0, 3);
 ---
 
 <Layout title="Procurement FAQ | Geektion B2B Solutions">
+	<!-- Technical SEO: FAQPage Schema -->
+	<script type="application/ld+json" slot="head">
+		{
+			"@context": "https://schema.org",
+			"@type": "FAQPage",
+			"mainEntity": [
+				{
+					"@type": "Question",
+					"name": "What is the Minimum Order Quantity (MOQ) for Geektion E-Drive systems?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "For our standard G-Series and C-Series systems, the MOQ starts at 50 units. For fully customized OEM projects, the MOQ typically starts at 200 units depending on the level of customization."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "What is the typical lead time for mass production?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Standard products usually have a lead time of 4-6 weeks. Custom OEM projects require 8-12 weeks from final prototype approval to mass production shipping."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "Are your battery systems flight-safe and IATA compliant?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Yes, our Independent Energy Hub is specifically designed with 100Wh modular cells that comply with IATA regulations for cabin luggage. We provide all necessary UN38.3 certification for global logistics."
+					}
+				}
+			]
+		}
+	</script>
+
 	<main class="container mx-auto p-4 py-20 max-w-4xl">
 		<h1 class="text-5xl font-bold mb-12 uppercase tracking-tighter">Procurement <span class="text-cyberBlue">FAQ</span></h1>
 		<p class="text-xl opacity-60 mb-16 leading-relaxed">Everything you need to know about partnering with Geektion for your eBike brand.</p>
