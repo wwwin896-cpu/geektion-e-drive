@@ -1,12 +1,31 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+
+const rides = [
+	{ img: '/images/scenes/scene_01_card.webp', alt: 'Folding ebike with mid-drive motor carried into metro – Bamboo Flute by Geektion', scene: 'Metro Commute — Paris' },
+	{ img: '/images/scenes/scene_02_card.webp', alt: 'Fat tire beach ebike riding on sand – Meteor Beach Cruiser coastal ride', scene: 'Coastal Cruise — California' },
+	{ img: '/images/scenes/scene_03_card.webp', alt: '27.5 city ebike commuting in London – Meteor City S1 mid-drive ebike', scene: 'City Commute — London' },
+	{ img: '/images/scenes/scene_04_card.webp', alt: 'Forest green city ebike on Copenhagen bicycle highway – Geektion city ebike', scene: 'Bike Highway — Copenhagen' },
+	{ img: '/images/scenes/scene_05_card.webp', alt: 'Long tail cargo ebike carrying family – Qiulong Cargo for family mobility', scene: 'Family Cargo — Netherlands' },
+	{ img: '/images/scenes/scene_06_card.webp', alt: 'Fat tire ebike on snow trail – Glacier Fat-Trek all-season ebike', scene: 'Highland Trail — Scotland' },
+	{ img: '/images/scenes/scene_07_card.webp', alt: '28 inch European city ebike at dusk – Meteor City L1 mid-drive ebike', scene: 'Boulevard Ride — Vienna' },
+	{ img: '/images/scenes/scene_08_card.webp', alt: 'Mustard yellow city ebike with detachable battery power bank – Geektion E-Drive', scene: 'Neighborhood — Berlin' },
+	{ img: '/images/scenes/scene_09_card.webp', alt: '700c touring ebike with panniers on coastal road – Zenith Tourer long distance', scene: 'Coastal Tour — Portugal' },
+	{ img: '/images/scenes/scene_10_card.webp', alt: 'Silver touring ebike on Shimanami Kaido bridge – Zenith Tourer S travel ebike', scene: 'Alpine Tour — Switzerland' },
+	{ img: '/images/scenes/scene_11_card.webp', alt: 'Step-through city ebike parked at home – Aurora, lightweight mid-drive ebike', scene: 'Old Town — Rothenburg' },
+	{ img: '/images/scenes/scene_12_card.webp', alt: 'Lime step-through ebike charging tablet with battery – Aurora ebike power bank', scene: 'Canal Evening — Amsterdam' },
+	{ img: '/images/scenes/scene_13_card.webp', alt: 'Champagne step-through ebike by lake – Aurora premium city ebike', scene: 'Night Ride — Zurich' },
+	{ img: '/images/scenes/scene_14_card.webp', alt: 'Comfort step-through ebike with suspension – Aurora Comfort E senior friendly', scene: 'Forest Path — Black Forest' },
+	{ img: '/images/scenes/scene_15_card.webp', alt: 'Silver copper step-through ebike in Stockholm old town – Zenith urban ebike', scene: 'Old Town — Stockholm' },
+	{ img: '/images/scenes/scene_16_card.webp', alt: 'Silver ebike with gum tires at Seoul river park – Aurora Urban ebike lifestyle', scene: 'River Park — Seoul' },
+];
 ---
 
 <Layout title="Applications & Use Cases">
 	<main class="container mx-auto p-4 py-20">
 		<h1 class="text-5xl font-bold mb-12 uppercase tracking-tighter text-white">Smart Mobility <span class="text-cyberBlue">Applications</span></h1>
-		
-		<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+		<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-32">
 			<!-- Application 1: Urban Commuting -->
 			<div class="border border-white/10 p-8 bg-white/5 hover:border-cyberBlue transition-colors group">
 				<div class="h-40 bg-graphite mb-6 flex items-center justify-center overflow-hidden">
@@ -21,13 +40,13 @@ import Layout from '../../layouts/Layout.astro';
 				</ul>
 			</div>
 
-			<!-- Application 2: Last-Mile Delivery -->
+			<!-- Application 2: Family & Cargo -->
 			<div class="border border-white/10 p-8 bg-white/5 hover:border-cyberBlue transition-colors group">
 				<div class="h-40 bg-graphite mb-6 flex items-center justify-center overflow-hidden">
-					<span class="text-xs uppercase tracking-widest opacity-30 group-hover:opacity-100 transition-opacity">Logistics</span>
+					<span class="text-xs uppercase tracking-widest opacity-30 group-hover:opacity-100 transition-opacity">Family & Cargo</span>
 				</div>
-				<h2 class="text-2xl font-bold tracking-tighter mb-4 uppercase">Last-Mile Delivery</h2>
-				<p class="opacity-60 text-sm mb-6 leading-relaxed">High torque for heavy loads. Our micro-drive systems are robust enough for cargo bikes while maintaining energy efficiency for all-day delivery routes.</p>
+				<h2 class="text-2xl font-bold tracking-tighter mb-4 uppercase">Family & Cargo</h2>
+				<p class="opacity-60 text-sm mb-6 leading-relaxed">High torque for heavy loads. Our micro-drive systems are robust enough for long-tail cargo bikes carrying kids and groceries, all day long.</p>
 				<ul class="text-xs space-y-2 opacity-50 mb-6 font-mono">
 					<li>• High torque (60Nm+)</li>
 					<li>• Heavy-duty durability</li>
@@ -38,10 +57,10 @@ import Layout from '../../layouts/Layout.astro';
 			<!-- Application 3: Micro-Mobility Fleets -->
 			<div class="border border-white/10 p-8 bg-white/5 hover:border-cyberBlue transition-colors group">
 				<div class="h-40 bg-graphite mb-6 flex items-center justify-center overflow-hidden">
-					<span class="text-xs uppercase tracking-widest opacity-30 group-hover:opacity-100 transition-opacity">Shared Fleets</span>
+					<span class="text-xs uppercase tracking-widest opacity-30 group-hover:opacity-100 transition-opacity">All-Terrain & Fleet</span>
 				</div>
-				<h2 class="text-2xl font-bold tracking-tighter mb-4 uppercase">Shared Mobility Fleets</h2>
-				<p class="opacity-60 text-sm mb-6 leading-relaxed">Optimized for fleet management. Low maintenance requirements and integrated IoT connectivity for real-time tracking and diagnostics.</p>
+				<h2 class="text-2xl font-bold tracking-tighter mb-4 uppercase">All-Terrain & Fleets</h2>
+				<p class="opacity-60 text-sm mb-6 leading-relaxed">From snow trails to shared fleets — low maintenance, IoT-ready connectivity, and weatherproof IP67 protection for every deployment.</p>
 				<ul class="text-xs space-y-2 opacity-50 mb-6 font-mono">
 					<li>• IoT & Cloud Ready</li>
 					<li>• Anti-theft features</li>
@@ -49,6 +68,32 @@ import Layout from '../../layouts/Layout.astro';
 				</ul>
 			</div>
 		</div>
+
+		<!-- Real-World Rides Gallery -->
+		<section>
+			<div class="flex justify-between items-end mb-12">
+				<div>
+					<h3 class="text-xs uppercase tracking-[0.2em] text-cyberBlue mb-4 font-bold">Real-World Rides</h3>
+					<h2 class="text-4xl font-bold tracking-tighter uppercase text-white">In The Field, Worldwide</h2>
+				</div>
+				<span class="text-xs uppercase opacity-50 font-mono hidden md:block">16 Platforms · 16 Cities</span>
+			</div>
+			<div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+				{rides.map((r) => (
+					<a href="/solutions/ebike" class="group relative block border border-white/10 overflow-hidden hover:border-cyberBlue transition-colors aspect-[3/2]">
+						<img
+							src={r.img}
+							alt={r.alt}
+							class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+							loading="lazy"
+						/>
+						<div class="absolute inset-0 bg-gradient-to-t from-graphite/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+						<span class="absolute bottom-0 left-0 right-0 p-4 text-xs uppercase tracking-widest font-bold text-white opacity-0 group-hover:opacity-100 transition-opacity">{r.scene}</span>
+					</a>
+				))}
+			</div>
+			<p class="mt-8 text-xs uppercase tracking-widest opacity-50 font-mono">Every platform powered by Geektion E-Drive · Micro Mid-Drive 2.4kg · Flight-Safe 100Wh Battery</p>
+		</section>
 
 		<!-- B2B Section -->
 		<section class="mt-32 p-12 bg-cyberBlue/10 border border-cyberBlue/20 text-center">
