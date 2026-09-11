@@ -1,136 +1,133 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 
-const citySeries = [
-	{ img: '/images/scenes/scene_03_card.webp', alt: '27.5 city ebike commuting in London – Meteor City S1 mid-drive ebike', name: 'Meteor City S1', color: 'Wine' },
-	{ img: '/images/scenes/scene_04_card.webp', alt: 'Forest green city ebike on Copenhagen bicycle highway – Geektion city ebike', name: 'Meteor City S1', color: 'Forest' },
-];
-
-const europeanL1 = [
-	{ img: '/images/scenes/scene_07_card.webp', alt: '28 inch European city ebike at dusk – Meteor City L1 mid-drive ebike', name: 'Meteor City L1', color: 'Bordeaux' },
-	{ img: '/images/scenes/scene_08_card.webp', alt: 'Mustard yellow city ebike with detachable battery power bank – Geektion E-Drive', name: 'Meteor City L1', color: 'Mustard' },
-];
-
-const auroraSeries = [
-	{ img: '/images/scenes/scene_11_card.webp', alt: 'Step-through city ebike parked at home – Aurora, lightweight mid-drive ebike', name: 'Aurora', color: 'Cream' },
-	{ img: '/images/scenes/scene_12_card.webp', alt: 'Lime step-through ebike charging tablet with battery – Aurora ebike power bank', name: 'Aurora', color: 'Lime' },
-	{ img: '/images/scenes/scene_13_card.webp', alt: 'Champagne step-through ebike by lake – Aurora premium city ebike', name: 'Aurora', color: 'Champagne' },
-	{ img: '/images/scenes/scene_14_card.webp', alt: 'Comfort step-through ebike with suspension – Aurora Comfort E senior friendly', name: 'Aurora Comfort E', color: 'Sage' },
-	{ img: '/images/scenes/scene_15_card.webp', alt: 'Silver copper step-through ebike in Stockholm old town – Zenith urban ebike', name: 'Zenith Step-Through', color: 'Silver Copper' },
-	{ img: '/images/scenes/scene_16_card.webp', alt: 'Silver ebike with gum tires at Seoul river park – Aurora Urban ebike lifestyle', name: 'Aurora Urban', color: 'Silver' },
+const categories = [
+	{
+		id: 'urban', title: 'Urban Commuters', tagline: 'City mobility, zero compromise',
+		banner: '/images/scenes/scene_03_hero.webp', bannerAlt: 'Urban e-bike in a European city setting',
+		items: [
+			{ href: '/solutions/ebike/meteor-city-s1-wine', img: '/images/scenes/scene_03_card.webp', alt: '27.5 city ebike commuting in London – Meteor City S1 mid-drive ebike', name: 'Meteor City S1', color: 'Deep Wine' },
+			{ href: '/solutions/ebike/meteor-city-s1-forest', img: '/images/scenes/scene_04_card.webp', alt: 'Forest green city ebike on Copenhagen bicycle highway – Geektion city ebike', name: 'Meteor City S1', color: 'Forest Green' },
+			{ href: '/solutions/ebike/meteor-city-l1-bordeaux', img: '/images/scenes/scene_07_card.webp', alt: '28 inch European city ebike at dusk – Meteor City L1 mid-drive ebike', name: 'Meteor City L1', color: 'Bordeaux' },
+			{ href: '/solutions/ebike/meteor-city-l1-mustard', img: '/images/scenes/scene_08_card.webp', alt: 'Mustard yellow city ebike with detachable battery power bank – Geektion E-Drive', name: 'Meteor City L1', color: 'Mustard Yellow' },
+			{ href: '/solutions/ebike/aurora-step-through-cream', img: '/images/scenes/scene_11_card.webp', alt: 'Step-through city ebike parked at home – Aurora, lightweight mid-drive ebike', name: 'Aurora Step-Through', color: 'Cream White' },
+			{ href: '/solutions/ebike/aurora-step-through-lime', img: '/images/scenes/scene_12_card.webp', alt: 'Lime step-through ebike charging tablet with battery – Aurora ebike power bank', name: 'Aurora Step-Through', color: 'Lime Green' },
+			{ href: '/solutions/ebike/aurora-step-through-champagne', img: '/images/scenes/scene_13_card.webp', alt: 'Champagne step-through ebike by lake – Aurora premium city ebike', name: 'Aurora Step-Through', color: 'Champagne' },
+			{ href: '/solutions/ebike/aurora-comfort-e', img: '/images/scenes/scene_14_card.webp', alt: 'Comfort step-through ebike with suspension – Aurora Comfort E senior friendly', name: 'Aurora Comfort E', color: 'Sage Green' },
+			{ href: '/solutions/ebike/zenith-step-through', img: '/images/scenes/scene_15_card.webp', alt: 'Silver copper step-through ebike in Stockholm old town – Zenith urban ebike', name: 'Zenith Step-Through', color: 'Silver Copper' },
+			{ href: '/solutions/ebike/aurora-urban', img: '/images/scenes/scene_16_card.webp', alt: 'Silver ebike with gum tires at Seoul river park – Aurora Urban ebike lifestyle', name: 'Aurora Urban', color: 'Silver' },
+		],
+	},
+	{
+		id: 'folding', title: 'Folding', tagline: 'Carry it. Fold it. Fly with it.',
+		banner: '/images/products/folding-city/lifestyle_03.png', bannerAlt: 'Folding city e-bike ready for a coastal ride',
+		items: [
+			{ href: '/solutions/ebike/bamboo-flute', img: '/images/scenes/scene_01_card.webp', alt: 'Folding ebike with mid-drive motor carried into metro – Bamboo Flute by Geektion', name: 'Bamboo Flute', color: 'Matte Grey' },
+		],
+	},
+	{
+		id: 'cargo', title: 'Cargo & Family', tagline: 'Replace the second car',
+		banner: '/images/products/qiulong-cargo/lifestyle_02.png', bannerAlt: 'Qiulong Cargo long-tail e-bike on a family lakeside outing',
+		items: [
+			{ href: '/solutions/ebike/qiulong-cargo', img: '/images/scenes/scene_05_card.webp', alt: 'Long tail cargo ebike carrying family – Qiulong Cargo for family mobility', name: 'Qiulong Cargo', color: 'Sage Green' },
+		],
+	},
+	{
+		id: 'all-terrain', title: 'All-Terrain', tagline: 'Seasons are no excuse',
+		banner: '/images/scenes/scene_06_hero.webp', bannerAlt: 'Fat tire e-bike on an all-terrain trail',
+		items: [
+			{ href: '/solutions/ebike/glacier-fat-trek', img: '/images/scenes/scene_06_card.webp', alt: 'Fat tire ebike on snow trail – Glacier Fat-Trek all-season ebike', name: 'Glacier Fat-Trek', color: 'Grey-Green' },
+		],
+	},
+	{
+		id: 'beach', title: 'Beach & Leisure', tagline: 'Soft sand, effortless ride',
+		banner: '/images/scenes/scene_02_hero.webp', bannerAlt: 'Fat tire beach e-bike riding on a coastal beach',
+		items: [
+			{ href: '/solutions/ebike/meteor-beach-cruiser', img: '/images/scenes/scene_02_card.webp', alt: 'Fat tire beach ebike riding on sand – Meteor Beach Cruiser coastal ride', name: 'Meteor Beach Cruiser', color: 'Slate Blue' },
+		],
+	},
+	{
+		id: 'touring', title: 'Long-Distance Touring', tagline: 'The horizon is the only limit',
+		banner: '/images/scenes/scene_09_hero.webp', bannerAlt: 'Touring e-bike on a long-distance coastal route',
+		items: [
+			{ href: '/solutions/ebike/zenith-tourer', img: '/images/scenes/scene_09_card.webp', alt: '700c touring ebike with panniers on coastal road – Zenith Tourer long distance', name: 'Zenith Tourer', color: 'Burnt Orange' },
+			{ href: '/solutions/ebike/zenith-tourer-s', img: '/images/scenes/scene_10_card.webp', alt: 'Silver touring ebike on Shimanami Kaido bridge – Zenith Tourer S travel ebike', name: 'Zenith Tourer S', color: 'Silver' },
+		],
+	},
 ];
 ---
 
 <Layout title="eBike Portfolio">
-	<main class="container mx-auto p-4 py-20">
-
-		<!-- Featured Hero: Folding Commuter -->
-		<section class="mb-32 relative overflow-hidden border border-white/10">
-			<img
-				src="/images/scenes/scene_01_hero.webp"
-				alt="Folding ebike with mid-drive motor carried into metro – Bamboo Flute by Geektion"
-				class="w-full h-[420px] md:h-[560px] object-cover"
-				loading="eager"
-			/>
-			<div class="absolute inset-0 bg-gradient-to-t from-graphite via-graphite/40 to-transparent"></div>
-			<div class="absolute bottom-0 left-0 p-8 md:p-16 max-w-2xl">
-				<h3 class="text-cyberBlue font-bold text-xs uppercase tracking-widest mb-4">Featured: Folding Series</h3>
-				<h1 class="text-5xl md:text-7xl font-bold tracking-tighter uppercase text-white mb-6">Bamboo <span class="text-cyberBlue">Flute</span></h1>
-				<p class="opacity-80 mb-8 leading-relaxed text-lg">18-inch folding eBike with our 2.4kg Micro Mid-Drive. Fold it, carry it, and take the detachable 100Wh battery — IATA-ready — on any flight.</p>
-				<div class="flex gap-6 font-mono text-sm">
-					<div><span class="block text-xs uppercase opacity-50 mb-1">System Weight</span><span class="text-cyberBlue font-bold">2.4 kg</span></div>
-					<div><span class="block text-xs uppercase opacity-50 mb-1">Torque</span><span class="text-cyberBlue font-bold">60 Nm</span></div>
-					<div><span class="block text-xs uppercase opacity-50 mb-1">Battery</span><span class="text-cyberBlue font-bold">100Wh IATA</span></div>
+	<main>
+		<!-- Full-bleed portfolio hero -->
+		<section class="relative isolate min-h-[640px] h-[calc(100svh-72px)] max-h-[920px] overflow-hidden bg-graphite">
+			<img src="/images/products/moped-cafe-racer/poster_01.png" alt="Geektion eBike portfolio visual with a moped-style electric bike on a coastal road" class="absolute inset-0 h-full w-full object-cover object-center" fetchpriority="high" />
+			<div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/45 to-black/10"></div>
+			<div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/20"></div>
+			<div class="relative mx-auto flex h-full max-w-7xl items-end px-6 pb-16 md:px-10 md:pb-24">
+				<div class="max-w-3xl">
+					<p class="mb-5 text-xs font-bold uppercase tracking-[0.3em] text-cyberBlue">Geektion eBike Portfolio / OEM-ready platforms</p>
+					<h1 class="max-w-3xl text-5xl font-bold uppercase leading-[0.9] tracking-[-0.06em] text-white md:text-7xl lg:text-8xl">Engineered to<br /><span class="text-cyberBlue">move further.</span></h1>
+					<p class="mt-7 max-w-xl text-base leading-relaxed text-white/75 md:text-lg">Six platforms, one powertrain. Explore city mobility, family cargo, folding utility and all-terrain freedom through a portfolio built for real-world riding.</p>
+					<div class="mt-9 flex flex-wrap gap-3">
+						<a href="#urban" class="bg-industrialOrange px-6 py-3 text-xs font-bold uppercase tracking-[0.18em] text-white transition hover:bg-white hover:text-industrialOrange">Explore platforms</a>
+						<a href="/contact" class="border border-white/40 px-6 py-3 text-xs font-bold uppercase tracking-[0.18em] text-white transition hover:border-cyberBlue hover:text-cyberBlue">Start an OEM project</a>
+					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- City Series -->
-		<section class="mb-32">
-			<div class="flex justify-between items-end mb-12">
+		<section class="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-24">
+			<div class="grid gap-10 lg:grid-cols-[1fr_2fr] lg:items-end">
 				<div>
-					<h3 class="text-xs uppercase tracking-[0.2em] text-cyberBlue mb-4 font-bold">City Series</h3>
-					<h2 class="text-4xl font-bold tracking-tighter uppercase">Meteor City S1</h2>
+					<p class="mb-3 text-xs font-bold uppercase tracking-[0.25em] text-cyberBlue">One system. Multiple rides.</p>
+					<h2 class="text-4xl font-bold uppercase leading-none tracking-tighter md:text-6xl">Find your<br />ride language.</h2>
 				</div>
-				<span class="text-xs uppercase opacity-50 font-mono hidden md:block">27.5" · Mid-Drive · 60Nm</span>
-			</div>
-			<div class="grid md:grid-cols-2 gap-8">
-				{citySeries.map((b) => (
-					<a href="/solutions/drive-system" class="group block border border-white/10 overflow-hidden hover:border-cyberBlue transition-colors">
-						<div class="aspect-[3/2] overflow-hidden">
-							<img src={b.img} alt={b.alt} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
-						</div>
-						<div class="p-6 flex justify-between items-center">
-							<div>
-								<h4 class="font-bold tracking-tight uppercase">{b.name}</h4>
-								<span class="text-xs opacity-50 uppercase">{b.color}</span>
-							</div>
-							<span class="text-cyberBlue text-xs uppercase font-bold tracking-widest">Explore &rarr;</span>
-						</div>
-					</a>
-				))}
-			</div>
-		</section>
-
-		<!-- European City L1 -->
-		<section class="mb-32">
-			<div class="flex justify-between items-end mb-12">
 				<div>
-					<h3 class="text-xs uppercase tracking-[0.2em] text-cyberBlue mb-4 font-bold">European Series</h3>
-					<h2 class="text-4xl font-bold tracking-tighter uppercase">Meteor City L1</h2>
+					<p class="max-w-2xl leading-relaxed opacity-65">Every model is powered by the Geektion E-Drive Micro Mid-Drive — 2.4kg, 45-60Nm, with a detachable 100Wh IATA-ready battery.</p>
+					<nav class="mt-7 flex flex-wrap gap-2 text-[11px] font-bold uppercase tracking-widest">
+						{categories.map((c) => <a href={`#${c.id}`} class="border border-white/10 px-3 py-2 transition hover:border-cyberBlue hover:text-cyberBlue">{c.title}</a>)}
+					</nav>
 				</div>
-				<span class="text-xs uppercase opacity-50 font-mono hidden md:block">28" · Puncture-Resistant · Hydraulic Disc</span>
-			</div>
-			<div class="grid md:grid-cols-2 gap-8">
-				{europeanL1.map((b) => (
-					<a href="/solutions/drive-system" class="group block border border-white/10 overflow-hidden hover:border-cyberBlue transition-colors">
-						<div class="aspect-[3/2] overflow-hidden">
-							<img src={b.img} alt={b.alt} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
-						</div>
-						<div class="p-6 flex justify-between items-center">
-							<div>
-								<h4 class="font-bold tracking-tight uppercase">{b.name}</h4>
-								<span class="text-xs opacity-50 uppercase">{b.color}</span>
-							</div>
-							<span class="text-cyberBlue text-xs uppercase font-bold tracking-widest">Explore &rarr;</span>
-						</div>
-					</a>
-				))}
 			</div>
 		</section>
 
-		<!-- Aurora Step-Through Series -->
-		<section>
-			<div class="flex justify-between items-end mb-12">
-				<div>
-					<h3 class="text-xs uppercase tracking-[0.2em] text-cyberBlue mb-4 font-bold">Step-Through Series</h3>
-					<h2 class="text-4xl font-bold tracking-tighter uppercase">Aurora & Zenith</h2>
+		<!-- Wide category visual sections -->
+		{categories.map((cat) => (
+			<section id={cat.id} class="mb-24 scroll-mt-24">
+				<div class="relative min-h-[360px] overflow-hidden border-y border-white/10 bg-graphite md:min-h-[440px]">
+					<img src={cat.banner} alt={cat.bannerAlt} class="absolute inset-0 h-full w-full object-cover" loading="lazy" />
+					<div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/45 to-black/15"></div>
+					<div class="relative mx-auto flex min-h-[360px] max-w-7xl items-end px-6 py-10 md:min-h-[440px] md:px-10 md:py-14">
+						<div>
+							<p class="mb-3 text-xs font-bold uppercase tracking-[0.25em] text-cyberBlue">Portfolio platform</p>
+							<h2 class="text-4xl font-bold uppercase tracking-tighter text-white md:text-6xl">{cat.title}</h2>
+							<p class="mt-3 text-sm uppercase tracking-[0.2em] text-white/65">{cat.tagline}</p>
+						</div>
+					</div>
 				</div>
-				<span class="text-xs uppercase opacity-50 font-mono hidden md:block">Zero-Step · Suspension · Comfort Geometry</span>
-			</div>
-			<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-				{auroraSeries.map((b) => (
-					<a href="/solutions/drive-system" class="group block border border-white/10 overflow-hidden hover:border-cyberBlue transition-colors">
-						<div class="aspect-[3/2] overflow-hidden">
-							<img src={b.img} alt={b.alt} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
-						</div>
-						<div class="p-6 flex justify-between items-center">
-							<div>
-								<h4 class="font-bold tracking-tight uppercase">{b.name}</h4>
-								<span class="text-xs opacity-50 uppercase">{b.color}</span>
-							</div>
-							<span class="text-cyberBlue text-xs uppercase font-bold tracking-widest">Explore &rarr;</span>
-						</div>
-					</a>
-				))}
-			</div>
-		</section>
+				<div class="mx-auto max-w-7xl px-6 pt-8 md:px-10">
+					<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+						{cat.items.map((b) => (
+							<a href={b.href} class="group block overflow-hidden border border-white/10 bg-white transition hover:border-cyberBlue">
+								<div class="aspect-[3/2] overflow-hidden bg-white">
+									<img src={b.img} alt={b.alt} class="h-full w-full object-contain transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+								</div>
+								<div class="flex items-center justify-between border-t border-white/10 bg-graphite p-5">
+									<div><h3 class="font-bold uppercase tracking-tight text-white">{b.name}</h3><span class="text-xs uppercase text-silver opacity-50">{b.color}</span></div>
+									<span class="text-xs font-bold uppercase tracking-widest text-cyberBlue group-hover:underline">View details &rarr;</span>
+								</div>
+							</a>
+						))}
+					</div>
+				</div>
+			</section>
+		))}
 
-		<!-- B2B CTA -->
-		<section class="mt-32 p-12 bg-cyberBlue/10 border border-cyberBlue/20 text-center">
-			<h2 class="text-3xl font-bold tracking-tighter mb-6 uppercase">White-Label the Full Portfolio</h2>
-			<p class="max-w-2xl mx-auto opacity-70 mb-8 leading-relaxed">All series are available for OEM/ODM branding. We handle frame geometry, drive tuning, and certification for your market.</p>
-			<a href="/contact" class="px-8 py-4 bg-industrialOrange text-white font-bold uppercase tracking-widest hover:bg-white hover:text-industrialOrange transition-all">Start an OEM Project</a>
+		<section class="mx-6 mb-20 bg-cyberBlue/10 px-6 py-16 text-center md:mx-auto md:max-w-7xl md:px-12">
+			<h2 class="text-3xl font-bold uppercase tracking-tighter md:text-5xl">White-label the full portfolio</h2>
+			<p class="mx-auto mb-8 mt-5 max-w-2xl leading-relaxed opacity-70">All series are available for OEM/ODM branding. We handle frame geometry, drive tuning and certification for your market.</p>
+			<a href="/contact" class="inline-block bg-industrialOrange px-8 py-4 text-xs font-bold uppercase tracking-[0.18em] text-white transition hover:bg-white hover:text-industrialOrange">Start an OEM project</a>
 		</section>
 	</main>
 </Layout>
