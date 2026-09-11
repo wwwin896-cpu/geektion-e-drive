@@ -5,7 +5,11 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="Home">
 	<main>
 		<!-- Hero: Focus on E-Drive -->
-		<section class="h-[80vh] flex flex-col justify-center items-center text-center p-4">
+		<section class="relative isolate flex min-h-[640px] h-[calc(100svh-72px)] max-h-[920px] flex-col justify-center items-center overflow-hidden bg-graphite p-4 text-center">
+			<img src="/images/home-coastal-banner.jpg" alt="Electric bicycle rider cruising a coastal road at sunset" class="absolute inset-0 h-full w-full object-cover object-center" fetchpriority="high" />
+			<div class="absolute inset-0 bg-gradient-to-b from-black/45 via-black/50 to-graphite/95"></div>
+			<div class="absolute inset-0 bg-gradient-to-r from-black/65 via-transparent to-black/35"></div>
+			<div class="relative z-10 flex flex-col items-center">
 			<h1 class="text-6xl md:text-8xl font-bold tracking-tighter mb-6">
 				ENGINEERED TO <br/> <span class="text-cyberBlue italic">REDEFINE</span> PERFORMANCE
 			</h1>
@@ -20,6 +24,7 @@ import Layout from '../layouts/Layout.astro';
 				<a href="/solutions/parts-oem" class="px-8 py-4 border border-white font-bold uppercase tracking-widest hover:border-industrialOrange hover:text-industrialOrange transition-all">
 					OEM Services
 				</a>
+			</div>
 			</div>
 		</section>
 
