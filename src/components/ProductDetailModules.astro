@@ -1,0 +1,49 @@
+---
+interface Props {
+	lifestyle: string[];
+	proof?: string[];
+}
+
+const { lifestyle, proof = ['OEM-ready platform documentation', 'Series references clearly separated from final project specifications', 'Engineering and certification support available through Geektion'] } = Astro.props;
+---
+
+<section class="mb-16 border-y border-white/10 py-8" aria-label="Delivery and support">
+	<div class="grid gap-6 md:grid-cols-3">
+		{proof.map((item) => (
+			<div class="flex gap-3 text-sm opacity-80">
+				<span class="text-cyberBlue font-mono" aria-hidden="true">01</span>
+				<span>{item}</span>
+			</div>
+		))}
+	</div>
+</section>
+
+<section class="mb-16" aria-labelledby="lifestyle-heading">
+	<div class="flex items-end justify-between gap-6 mb-6">
+		<div>
+			<p class="text-xs uppercase tracking-[0.2em] text-cyberBlue font-bold mb-2">In the field</p>
+			<h2 id="lifestyle-heading" class="text-3xl font-bold tracking-tighter uppercase">Built for the way it is used</h2>
+		</div>
+		<span class="hidden md:block text-[10px] uppercase tracking-widest opacity-40 font-mono">Lifestyle reference</span>
+	</div>
+	<div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+		{lifestyle.map((src, index) => (
+			<figure class="overflow-hidden border border-white/10 bg-white/5">
+				<img src={src} alt={`Lifestyle application ${index + 1}`} class="w-full aspect-[4/3] object-cover transition-transform duration-500 hover:scale-105" loading="lazy" />
+			</figure>
+		))}
+	</div>
+</section>
+
+<section class="grid gap-8 md:grid-cols-2 mb-16" aria-label="Specifications and next steps">
+	<div class="border border-white/10 p-6 bg-white/[0.03]">
+		<p class="text-xs uppercase tracking-[0.2em] text-cyberBlue font-bold mb-4">Specifications</p>
+		<h2 class="text-2xl font-bold tracking-tighter uppercase mb-4">Confirm the configuration</h2>
+		<p class="text-sm opacity-65 leading-relaxed">Published values marked as series references are starting points for OEM discussion. Final geometry, battery, motor calibration, compliance and component selections are confirmed against the target market and project brief.</p>
+	</div>
+	<div class="border border-white/10 p-6 bg-white/[0.03]">
+		<p class="text-xs uppercase tracking-[0.2em] text-industrialOrange font-bold mb-4">Reviews &amp; samples</p>
+		<h2 class="text-2xl font-bold tracking-tighter uppercase mb-4">Bring the platform to review</h2>
+		<p class="text-sm opacity-65 leading-relaxed">Customer review content and production sample status are not published yet. Contact Geektion for current samples, validation files and a project-specific quotation.</p>
+	</div>
+</section>

@@ -8,3 +8,22 @@ dist/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# temporary image processing artifacts
+raw_*.jpg
+bg_*.jpg
+check_*.jpg
+test_*.jpg
+test_*.png
+/scene_*.jpg
+compose_*.py
+convert_webp.py
+remaster_*.py
+enrich_*.py
+gen_*.py
+update_hrefs.py
+fix_layout_path.py
+adultceremony/
+
+# xiaominart project (independent repo, do not track here)
+/xiaominart-website/
