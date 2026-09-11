@@ -4,12 +4,13 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="Home">
 	<main>
+		<!-- Hero: Focus on E-Drive -->
 		<section class="h-[80vh] flex flex-col justify-center items-center text-center p-4">
 			<h1 class="text-6xl md:text-8xl font-bold tracking-tighter mb-6">
 				ENGINEERED TO <br/> <span class="text-cyberBlue italic">REDEFINE</span> PERFORMANCE
 			</h1>
 			<p class="max-w-2xl text-lg md:text-xl opacity-80 mb-10 font-light">
-				High-performance drive systems and OEM solutions for the next generation of eBikes. 
+				High-performance Geektion E-Drive systems and OEM solutions for the next generation of eBikes.
 				B2B partner for global brands and wholesalers.
 			</p>
 			<div class="flex gap-4">
@@ -22,25 +23,35 @@ import Layout from '../layouts/Layout.astro';
 			</div>
 		</section>
 
-		<section class="container mx-auto grid md:grid-cols-3 gap-8 p-4 py-20">
-			<div class="border border-white/10 p-8 hover:border-cyberBlue transition-colors group">
-				<h3 class="text-xs uppercase tracking-[0.2em] text-cyberBlue mb-4 font-bold">Pillar 01</h3>
-				<h2 class="text-3xl font-bold tracking-tighter mb-4">eBike Portfolio</h2>
-				<p class="opacity-60 mb-6 text-sm">Full-bike solutions ranging from urban commuters to high-performance mountain bikes.</p>
-				<a href="/solutions/ebike" class="text-xs uppercase tracking-widest font-bold group-hover:underline">View Collection &rarr;</a>
+		<!-- E-Drive Ecosystem: 3 pillars (no eBike) -->
+		<section class="container mx-auto p-4 py-20">
+			<div class="text-center mb-16">
+				<h3 class="text-xs uppercase tracking-[0.2em] text-cyberBlue mb-4 font-bold">The Geektion Ecosystem</h3>
+				<h2 class="text-4xl md:text-5xl font-bold tracking-tighter uppercase">E-Drive. Energy. Engineering.</h2>
 			</div>
-			<div class="border border-white/10 p-8 hover:border-cyberBlue transition-colors group">
-				<h3 class="text-xs uppercase tracking-[0.2em] text-cyberBlue mb-4 font-bold">Pillar 02</h3>
-				<h2 class="text-3xl font-bold tracking-tighter mb-4">Geektion E-Drive</h2>
-				<p class="opacity-60 mb-6 text-sm">Torque-rich motors, high-density batteries, and intelligent human-machine interfaces.</p>
-				<a href="/solutions/drive-system" class="text-xs uppercase tracking-widest font-bold group-hover:underline">Technical Specs &rarr;</a>
+			<div class="grid md:grid-cols-3 gap-8">
+				<div class="border border-white/10 p-8 hover:border-cyberBlue transition-colors group">
+					<h3 class="text-xs uppercase tracking-[0.2em] text-cyberBlue mb-4 font-bold">Core System</h3>
+					<h2 class="text-3xl font-bold tracking-tighter mb-4">Geektion E-Drive</h2>
+					<p class="opacity-60 mb-6 text-sm leading-relaxed">Micro mid-drive motors engineered for stealth integration. 2.4kg system weight, 45-60Nm in-runner torque, and precision reduction gearing for the folding & urban segment.</p>
+					<a href="/solutions/drive-system" class="text-xs uppercase tracking-widest font-bold group-hover:underline">Technical Specs &rarr;</a>
+				</div>
+				<div class="border border-white/10 p-8 hover:border-cyberBlue transition-colors group">
+					<h3 class="text-xs uppercase tracking-[0.2em] text-cyberBlue mb-4 font-bold">Energy Solutions</h3>
+					<h2 class="text-3xl font-bold tracking-tighter mb-4">Battery &amp; Energy</h2>
+					<p class="opacity-60 mb-6 text-sm leading-relaxed">Decoupled battery architecture. 100Wh IATA-compliant cells that detach in seconds and double as a USB-C power bank — freedom to ride, fly, and charge anywhere.</p>
+					<a href="/solutions/drive-system" class="text-xs uppercase tracking-widest font-bold group-hover:underline">Energy Hub &rarr;</a>
+				</div>
+				<div class="border border-white/10 p-8 hover:border-cyberBlue transition-colors group">
+					<h3 class="text-xs uppercase tracking-[0.2em] text-cyberBlue mb-4 font-bold">Partner Programs</h3>
+					<h2 class="text-3xl font-bold tracking-tighter mb-4">OEM &amp; Certification</h2>
+					<p class="opacity-60 mb-6 text-sm leading-relaxed">Global compliance (EN15194, UL2849, UN38.3) with full OEM/ODM customization — firmware tuning, housing design, and STEP-file engineering support for brand partners.</p>
+					<a href="/solutions/parts-oem" class="text-xs uppercase tracking-widest font-bold group-hover:underline">Manufacturing &rarr;</a>
+				</div>
 			</div>
-			<div class="border border-white/10 p-8 hover:border-cyberBlue transition-colors group">
-				<h3 class="text-xs uppercase tracking-[0.2em] text-cyberBlue mb-4 font-bold">Pillar 03</h3>
-				<h2 class="text-3xl font-bold tracking-tighter mb-4">Parts OEM</h2>
-				<p class="opacity-60 mb-6 text-sm">Precision manufacturing for brands. From frame forging to advanced CNC components.</p>
-				<a href="/solutions/parts-oem" class="text-xs uppercase tracking-widest font-bold group-hover:underline">Manufacturing &rarr;</a>
-			</div>
+		</section>
+
+		<!-- Latest Insights -->
 		<section class="container mx-auto p-4 py-20 border-t border-white/10">
 			<div class="flex justify-between items-end mb-12">
 				<div>
@@ -52,13 +63,7 @@ import Layout from '../layouts/Layout.astro';
 			
 			<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 				<a href="/insights/invisible-power" class="group block border border-white/10 hover:border-cyberBlue transition-colors overflow-hidden">
-					<div class="aspect-video relative bg-black">
-						<img 
-							src="https://sc02.alicdn.com/kf/Hcf37d3724b23406fa2013ac5c23c43eaK.jpg" 
-							alt="Invisible Power" 
-							class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-500"
-						/>
-					</div>
+					<div class="hidden" aria-hidden="true"></div>
 					<div class="p-8">
 						<h4 class="text-xl font-bold tracking-tighter mb-4 uppercase">Invisible Power: Future of Folding eBikes</h4>
 						<p class="opacity-60 text-xs mb-4">How micro-integration is shifting the B2B landscape.</p>
@@ -67,13 +72,7 @@ import Layout from '../layouts/Layout.astro';
 				</a>
 
 				<a href="/insights/in-runner-vs-out-runner" class="group block border border-white/10 hover:border-cyberBlue transition-colors overflow-hidden">
-					<div class="aspect-video relative bg-black">
-						<img 
-							src="https://sc02.alicdn.com/kf/Hf266ae051859445ea46b0345a0f8fefah.jpg" 
-							alt="In-runner Technology" 
-							class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-500"
-						/>
-					</div>
+					<div class="hidden" aria-hidden="true"></div>
 					<div class="p-8">
 						<h4 class="text-xl font-bold tracking-tighter mb-4 uppercase">The Secret of In-runner Propulsion</h4>
 						<p class="opacity-60 text-xs mb-4">Internal rotor architecture for high-torque systems.</p>
@@ -82,13 +81,7 @@ import Layout from '../layouts/Layout.astro';
 				</a>
 
 				<a href="/insights/flight-safe-energy-hub" class="group block border border-white/10 hover:border-cyberBlue transition-colors overflow-hidden">
-					<div class="aspect-video relative bg-black">
-						<img 
-							src="https://sc02.alicdn.com/kf/H6ff983140d284c078c0c355d88109ff14.jpg" 
-							alt="Flight Safe Energy Hub" 
-							class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-500"
-						/>
-					</div>
+					<div class="hidden" aria-hidden="true"></div>
 					<div class="p-8">
 						<h4 class="text-xl font-bold tracking-tighter mb-4 uppercase">The Flight-Safe Energy Hub</h4>
 						<p class="opacity-60 text-xs mb-4">IATA-compliant batteries for the global nomad.</p>
