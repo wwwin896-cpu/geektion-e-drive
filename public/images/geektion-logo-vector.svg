@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" role="img" aria-labelledby="title desc">
+  <title id="title">Geektion</title>
+  <desc id="desc">Geektion six-segment geometric mark and lowercase wordmark</desc>
+  <g fill="#162750" transform="translate(135 150)">
+    <path d="M-20-105h40v50l12 8-12 8h-40l-12-8 12-8z"/>
+    <path d="M-20-105h40v50l12 8-12 8h-40l-12-8 12-8z" transform="rotate(60)"/>
+    <path d="M-20-105h40v50l12 8-12 8h-40l-12-8 12-8z" transform="rotate(120)"/>
+    <path d="M-20-105h40v50l12 8-12 8h-40l-12-8 12-8z" transform="rotate(180)"/>
+    <path d="M-20-105h40v50l12 8-12 8h-40l-12-8 12-8z" transform="rotate(240)"/>
+    <path d="M-20-105h40v50l12 8-12 8h-40l-12-8 12-8z" transform="rotate(300)"/>
+  </g>
+  <g fill="#162750" fill-rule="evenodd">
+    <path d="M315 108h58q24 0 24 24v61q0 24-24 24h-58q-24 0-24-24v-61q0-24 24-24zm6 27q-3 0-3 4v47q0 4 3 4h46q3 0 3-4v-47q0-4-3-4z"/>
+    <path d="M420 108h60q24 0 24 24v85h-27v-35h-63v35h-27v-85q0-24 33-24zm-6 27v20h63v-20q0-4-4-4h-55q-4 0-4 4z"/>
+    <path d="M530 108h60q24 0 24 24v85h-27v-35h-63v35h-27v-85q0-24 33-24zm-6 27v20h63v-20q0-4-4-4h-55q-4 0-4 4z"/>
+    <path d="M638 108h27v47l43-47h34l-49 53 52 56h-36l-44-49v49h-27z"/>
+    <path d="M744 77h27v31h34v27h-34v54q0 4 4 4h30v26h-42q-19 0-19-22v-62h-18v-27h18z"/>
+    <path d="M832 108h27v109h-27zm0-32h27v23h-27z"/>
+    <path d="M900 108h60q24 0 24 24v85h-27v-81q0-4-4-4h-48q-5 0-5 4v81h-27v-85q0-24 27-24z"/>
+  </g>
+</svg>
