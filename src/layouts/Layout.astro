@@ -12,8 +12,8 @@ const { title } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="description" content="Geektion - High Performance B2B eBike Solutions" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/images/geektion-logo-nav-duotone.svg" />
-		<link rel="apple-touch-icon" href="/images/geektion-logo-nav-duotone.svg" />
+		<link rel="icon" type="image/svg+xml" href="/images/geektion-logo-nav-duotone-fixed.svg" />
+		<link rel="apple-touch-icon" href="/images/geektion-logo-nav-duotone-fixed.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title} | Geektion</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +25,7 @@ const { title } = Astro.props;
 		<nav class="border-b border-white/10 p-2 md:p-4 sticky top-0 bg-graphite/80 backdrop-blur-md z-50">
 			<div class="container mx-auto flex justify-between items-center">
 				<a href="/" class="flex items-center group" aria-label="Geektion home">
-					<img src="/images/geektion-logo-nav-duotone.svg" alt="Geektion — high-performance eBike systems" title="Geektion" class="h-8 w-[128px] object-contain object-left transition-transform group-hover:scale-[1.02] md:h-10 md:w-[160px]" />
+					<img src="/images/geektion-logo-nav-duotone-fixed.svg" alt="Geektion — high-performance eBike systems" title="Geektion" class="h-8 w-[128px] object-contain object-left transition-transform group-hover:scale-[1.02] md:h-10 md:w-[160px]" />
 				</a>
 				<div class="space-x-8 text-sm uppercase tracking-widest font-bold">
 					<a href="/solutions/ebike" class="hover:text-cyberBlue transition-colors">eBike</a>
@@ -49,9 +49,19 @@ const { title } = Astro.props;
 			<div class="container mx-auto text-center space-y-8">
 				<div class="flex justify-center">
 					<a href="/" aria-label="Geektion home" class="opacity-80 hover:opacity-100 transition-opacity">
-						<img src="/images/geektion-logo-nav-duotone.svg" alt="Geektion — high-performance eBike systems" title="Geektion" class="h-10 w-[160px] object-contain object-left md:h-12 md:w-[200px]" />
+						<img src="/images/geektion-logo-nav-duotone-fixed.svg" alt="Geektion — high-performance eBike systems" title="Geektion" class="h-10 w-[160px] object-contain object-left md:h-12 md:w-[200px]" />
 					</a>
 				</div>
+				<nav aria-label="Footer quick navigation" class="flex flex-wrap justify-center gap-x-6 gap-y-3 text-xs font-bold uppercase tracking-widest text-silver/70">
+					<a href="/solutions/ebike" class="hover:text-cyberBlue transition-colors">eBike</a>
+					<a href="/solutions/drive-system" class="hover:text-cyberBlue transition-colors">E-Drive</a>
+					<a href="/solutions/manufacturers" class="hover:text-cyberBlue transition-colors">Manufacturers</a>
+					<a href="/technology/smart-ecosystem" class="hover:text-cyberBlue transition-colors">Smart Ecosystem</a>
+					<a href="/solutions/parts-oem" class="hover:text-cyberBlue transition-colors">Parts OEM</a>
+					<a href="/insights" class="hover:text-cyberBlue transition-colors">Insights</a>
+					<a href="/faq" class="hover:text-cyberBlue transition-colors">FAQ</a>
+					<a href="/contact" class="hover:text-cyberBlue transition-colors">Contact</a>
+				</nav>
 				<div class="flex justify-center space-x-6 text-silver/60">
 					<a href="https://facebook.com/geektion" target="_blank" class="hover:text-cyberBlue transition-colors">
 						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
